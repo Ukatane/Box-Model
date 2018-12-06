@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background: darkblue;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background: red;
+}
+.box{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 500px;
+    background: rgb(32, 21, 21);
+    transition: 1.5s;
+    margin: 20% 0;
+}
+.container .box .image{
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+}
+.container .box .image img{
+    width: 100%;
+}
+.container .box .details{
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    height: 250px;
+    line-height: 2.8em;
+    width: 100%;
+    overflow: hidden;
+}
+.container .box .details .fa{
+    font-size: 80px;
+}
+.container .box .details a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid bisque;
+    padding: 10px 13px;
+    text-align: center;
+    border-radius: 30px;
+    transition: 1.5s;
+    display: none;
+}
+.container .box:hover .details a{
+    display: initial;
+}
+.container .box .details a:hover{
+    color: #262626;
+    background: beige;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+}
+.container .box:nth-child(even) .details{
+    bottom: 0;
+    left: 0;
+}
+.container .box:nth-child(odd) .image{
+    bottom: 0;
+    left: 0;
+}
+.container .box:hover{
+    box-shadow: 7px 7px 10px rgba(0,0,0,1);
+    transform: rotateY(360deg);
+    z-index: 1;
+}
+.container .box:nth-child(even) .details{
+    bottom: 0;
+    left: 0;
+}
+.container .box:nth-child(1) .details{
+   background: #5c16be;
+}
+.container .box:nth-child(2) .details{
+    background: #854d04;
+}
+.container .box:nth-child(3) .details{
+    background: #0091d4;
+}
+.container .box:nth-child(4) .details{
+    background: #cf7d7a;
+}
